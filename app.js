@@ -6,7 +6,7 @@ const btn = document.querySelector("button");
 
 const getPerson = async () => {
     
-    const request = await fetch("http://localhost:3000/person",{
+    const request = await fetch("https://karim-ds-hw.herokuapp.com/person",{
         method : "GET",
         headers : {
             "Content-type" : "application/json"
@@ -42,7 +42,7 @@ const getPerson = async () => {
 
 const handleBtnClick = async () => {
 
-    const request = await fetch("http://localhost:3000/person/add", {
+    const request = await fetch("https://karim-ds-hw.herokuapp.com/person/add", {
         method : "POST",
         headers : {
             "content-type" : "application/json"
